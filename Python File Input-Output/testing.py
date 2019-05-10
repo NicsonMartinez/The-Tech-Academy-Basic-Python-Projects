@@ -1,25 +1,6 @@
-# DRILL:
-# Drill Description:
-# For this drill, you will need to write a script that will check a specific folder on the hard drive,
-# verify whether those files end with a “.txt” file extension and if they do, print those qualifying
-# file names and their corresponding modified time-stamps to the console.
-
-import os
-
-directoryList = os.listdir('C:\\test-directory\\.') 
-# Outputs array of files in the current directory (Where this file is stored) when "." is in os.listdir(".")
-# Absolute and relative paths can be put into that string value.
 
 
-print("These are the files in the path, C:\\test-directory\\ :\n\n{}\n\n".format(directoryList))
-
-
-txtFilesList = []
-for i in directoryList:
-    if i.endswith('.txt'):
-        txtFilesList.append(i)
-print("Here is a list of only files that end in '.txt' :\n\n{}\n\n".format(txtFilesList))
-
+txtFilesList = ['File1.txt', 'File10.js', 'File2.txt', 'File3.docx', 'File4.docx', 'File5.py', 'File6.html', 'File7.html', 'File8.css', 'File9.css']
 
 fNameList = []
 for i in txtFilesList:
@@ -33,7 +14,7 @@ for i in txtFilesList:
 
     fNameList.append(fName)         
         
-
+print("{}\n".format(txtFilesList))
 print(fNameList)
 
 

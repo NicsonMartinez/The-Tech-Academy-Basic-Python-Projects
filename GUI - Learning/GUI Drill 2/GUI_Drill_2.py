@@ -14,7 +14,6 @@
 from tkinter import * 
 from tkinter import filedialog
 from tkinter import Tk
-import os
 
 class TheMainWindow(Frame):
     def __init__ (self,master):

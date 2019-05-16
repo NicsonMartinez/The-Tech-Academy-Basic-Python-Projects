@@ -28,7 +28,7 @@ from datetime import datetime
 
 fPath = 'C:\\test-directory\\'
 directoryList = os.listdir(fPath) #Creates list of files in a specific directory.
-print("These are the files in the path, C:\\test-directory\\ :\n\n{}\n\n".format(directoryList))
+print("These are the files in the path, {} :\n\n{}\n\n".format(fPath,directoryList))
 
 for file in directoryList:
     if file.endswith('.txt'):

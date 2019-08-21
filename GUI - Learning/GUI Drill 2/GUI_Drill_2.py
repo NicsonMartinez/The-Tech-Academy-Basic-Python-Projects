@@ -6,7 +6,6 @@
 # invoke a dialog modal which will allow users with the ability to select a folder directory 
 # from their system. Finally, your script will show the user’s selected directory path into 
 # the text field.
-#
 # Nicson Martinez
 # 5/14/19
 
@@ -42,7 +41,7 @@ class TheMainWindow(Frame):
         self.btnCloseProg = Button(self.master, text='Close Program', width=15, height=2, command=self.close)
         self.btnCloseProg.grid(row=2, column=1, sticky=SE)
 
-#---------------------------------[ Button Functions ]--------------------------------------
+#---------------------------------[ Button Functions ]-------------------------------------
 
     def browseDirectory(self):
         # This is done in case the user decided to type something in the textbox before
@@ -50,7 +49,8 @@ class TheMainWindow(Frame):
         test = self.txtBox1.get() 
         print(test)
 
-        test1 = self.txtBox1.delete(0, END) #Deletes chars located in index 0,1,2,3...until END.
+        #Deletes chars located in index 0,1,2,3...until END.
+        test1 = self.txtBox1.delete(0, END)
         print(test1)
         
         dirVariable = filedialog.askdirectory()
